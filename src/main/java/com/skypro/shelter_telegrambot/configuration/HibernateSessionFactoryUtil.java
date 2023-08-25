@@ -40,7 +40,6 @@ public class HibernateSessionFactoryUtil {
                 configuration.addAnnotatedClass(DogParent.class);
                 StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());
                 sessionFactory = configuration.buildSessionFactory(builder.build());
-//                sessionFactory = new Configuration().configure().addAnnotatedClass(User.class).buildSessionFactory();
 
             } catch (Exception e) {
                 System.out.println("Исключение!" + e);
